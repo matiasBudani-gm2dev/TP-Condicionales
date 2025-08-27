@@ -17,3 +17,7 @@ do{
 if(edad>numRef){
     console.log("Eres mayor de edad")
 }
+// 3 Crea un bloque de código que compare dos números e imprima en consola un valor booleano.
+if(numA>numB){
+    console.log(numA>numB)
+}
