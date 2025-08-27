@@ -40,3 +40,10 @@ do{
 if(nombre1 != nombre2){
     console.log(nombre1 + " es distinto de "+ nombre2)
 } 
+// 6 Crea un bloque de código que imprima en consola un número en caso de que sea un número negativo.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+if(numA<0){
+    console.log(numA + " es negativo")
+}
