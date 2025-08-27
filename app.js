@@ -31,3 +31,11 @@ do{
 if(nombre1 == nombre2){
     console.log(nombre1)
 }
+// 5 Crea un bloque de código que compare dos nombres, y si ambos son diferentes imprima en consola un mensaje.
+do{
+    nombre1 = prompt("Ingrese su nombre: ")
+    nombre2 = prompt("Ingrese su nombre de vuelta: ")
+}while(!isNaN(parseInt(nombre1)) || !isNaN(parseInt(nombre2)))
+if(nombre1 != nombre2){
+    console.log(nombre1)
+} 
