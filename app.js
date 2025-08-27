@@ -10,7 +10,7 @@ let edad
 let numRef = 17
 do{
     edad = prompt("Ingrese su edad: ")
-    if(edad % 1 == 0){
+    if(edad % 1 == 0 && edad >= 0){
         edad = parseInt(edad)
     }
 }while(isNaN(edad) || edad === edad.toString())
