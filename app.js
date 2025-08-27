@@ -9,7 +9,7 @@ if(numA>numB){
 let edad
 let numRef = 17
 do{
-    edad = prompt("Ingrese su edad")
+    edad = prompt("Ingrese su edad: ")
     if(edad % 1 == 0){
         edad = parseInt(edad)
     }
