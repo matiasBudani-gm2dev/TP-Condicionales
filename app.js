@@ -76,3 +76,22 @@ if(numA>=0){
 }else{
     console.log(numA + " es negativo")
 }
+// 10 Crea una función que tome de referencia una variable string cuyo valor sea una letra, y luego imprima en consola si es una vocal o una consonante.
+let stringVar;
+let inWhile = true;
+do{
+    stringVar = prompt("Ingrese un unico caracter: ")
+    if(stringVar.length == 1){
+        inWhile = false
+    }
+}while(inWhile)
+let vocales = ["a", "e", "i", "o", "u"]
+for(let i = 0; i<vocales.length; i++){
+    if(stringVar.toLocaleLowerCase() == vocales[i]){
+        console.log(stringVar + " es una vocal")
+        i = vocales.length
+    }
+    if(i == (vocales.length-1) && stringVar != vocales[i]){
+        console.log(stringVar + "es una consonante")
+    }
+}
