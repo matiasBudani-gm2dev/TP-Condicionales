@@ -67,3 +67,12 @@ if(numB % 2 == 0){
 }else{
     console.log(numB + " es impar")
 }
+// 9 Crea un bloque de código que compare dos números y luego imprima en consola si es positivo o negativo.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+if(numA>=0){
+    console.log(numA + " es positivo")
+}else{
+    console.log(numA + " es negativo")
+}
