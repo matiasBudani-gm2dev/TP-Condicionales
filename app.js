@@ -21,3 +21,13 @@ if(edad>numRef){
 if(numA>numB){
     console.log(numA>numB)
 }
+// 4 Crea un bloque de código que compare dos nombres, y si ambos son iguales imprima en consola el nombre.
+let nombre1;
+let nombre2;
+do{
+    nombre1 = prompt("Ingrese su nombre: ")
+    nombre2 = prompt("Ingrese su nombre de vuelta: ")
+}while(!isNaN(parseInt(nombre1)) || !isNaN(parseInt(nombre2)))
+if(nombre1 == nombre2){
+    console.log(nombre1)
+}
