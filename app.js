@@ -54,3 +54,16 @@ do{
 if(numA>=0){
     console.log(numA + " no es negativo")
 }
+// 8 Crea un bloque de código que compare dos números. Si el número es par, imprimir en consola ‘El número es par’. De lo contrario, imprimir ‘El número es impar’.
+numA = 2
+numB = 5
+if(numA % 2 == 0){
+    console.log(numA + " es par")
+}else{
+    console.log(numA + " es impar")
+}
+if(numB % 2 == 0){
+    console.log(numB + " es par")
+}else{
+    console.log(numB + " es impar")
+}
