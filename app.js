@@ -52,5 +52,5 @@ do{
     numA = prompt("Ingrese un numero: ")
 }while(isNaN(parseInt(numA)))
 if(numA>=0){
-    console.log(numA + " es negativo")
+    console.log(numA + " no es negativo")
 }
