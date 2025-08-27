@@ -35,7 +35,8 @@ if(nombre1 == nombre2){
 do{
     nombre1 = prompt("Ingrese su nombre: ")
     nombre2 = prompt("Ingrese su nombre de vuelta: ")
+
 }while(!isNaN(parseInt(nombre1)) || !isNaN(parseInt(nombre2)))
 if(nombre1 != nombre2){
-    console.log(nombre1)
+    console.log(nombre1 + " es distinto de "+ nombre2)
 } 
