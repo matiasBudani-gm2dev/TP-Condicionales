@@ -111,3 +111,12 @@ if(nombreVar.toLocaleLowerCase() == 'pedro'){
 else{
     console.log("Hola! Cómo te llamas?")
 }
+// 12 Crea un bloque de código que tome de referencia la nota de un examen y devuelva ‘Estás aprobado’ si la nota es mayor o igual a 7, o ‘Estás desaprobado’ si la nota es menor a 7.
+do{
+    numA = prompt("Ingrese su nota: ")
+}while(isNaN(parseInt(numA)) || numA <= 0 || numA >= 10)
+if(numA >= 7){
+    console.log("Estas aprobado")
+}else{
+    console.log("Estas desaprobado")
+}
