@@ -120,3 +120,16 @@ if(numA >= 7){
 }else{
     console.log("Estas desaprobado")
 }
+// 13 Crea un bloque de código que tome de referencia un número e imprima en pantalla si el número es menor a 10, mayor a 50, o si está entre esos dos valores.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+if(numA <= 10){
+    console.log(numA + " es menor a 10")
+}
+else if(numA<= 50){
+    console.log(numA + " esta entre 10 y 50")
+}
+else{
+    console.log(numA + " es mayora 50")
+}
