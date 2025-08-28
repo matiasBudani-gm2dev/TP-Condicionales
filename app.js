@@ -216,7 +216,7 @@ switch(numA){
 let genero;
 do{
     genero = prompt("Ingrese su genero (H, M, X): ")
-    genero = genero.toLocaleLowerCase()
+    genero = genero.toLocaleLowerCase().trim()
 }while(!(genero == 'h') && !(genero == 'm') && !(genero == 'x'))
 switch(genero){
     case('h'):
@@ -245,4 +245,47 @@ switch(numA){
     break;
     default:
         console.log("Mayor a 3")
+}
+// 21 Crea un bloque de código que tome de referencia una letra. Utiliza switch para imprimir en consola si es una vocal, una consonante, o un caracter especial.
+do{
+    stringVar = prompt("Ingrese un unico caracter: ")
+    if(stringVar.length == 1){
+        inWhile = false
+    }
+}while(inWhile)
+switch (stringVar.toLowerCase().trim()) {
+  case 'a':
+  case 'e':
+  case 'i':
+  case 'o':
+  case 'u':
+    console.log(stringVar + "Es una vocal");
+    break;
+
+  case 'b':
+  case 'c':
+  case 'd':
+  case 'f':
+  case 'g':
+  case 'h':
+  case 'j':
+  case 'k':
+  case 'l':
+  case 'm':
+  case 'n':
+  case 'ñ':
+  case 'p':
+  case 'q':
+  case 'r':
+  case 's':
+  case 't':
+  case 'v':
+  case 'w':
+  case 'x':
+  case 'y':
+  case 'z':
+    console.log(stringVar + "Es una consonante");
+    break;
+  default:
+    console.log(stringVar + "Es un carácter especial");
 }
