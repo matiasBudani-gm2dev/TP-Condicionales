@@ -326,3 +326,19 @@ do{
     numB = prompt("Ingrese otro numero: ")
 }while(isNaN(parseInt(numA)), isNaN(parseInt(numB)))
 numA > numB ? console.log(numA + " es mayor que " + numB) : numA === numB ? console.log(numA + " y " + numB + " son iguales") : console.log(numA + " es menor que " + numB)
+// 26 Crea un bloque de código que tome de referencia un número del 1 al 7 y utilice el operador ternario para imprimir en consola el día de la semana correspondiente.
+do{
+    numA = prompt("Ingrese un numero del 1 al 7: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA > 7)
+numA == '1' ? console.log("lunes") :
+numA == '2' ? console.log("martes") :
+numA == '3' ? console.log("miercoles") :
+numA == '4' ? console.log("jueves") :
+numA == '5' ? console.log("viernes") :
+numA == '6' ? console.log("sabado") : console.log("domingo")
+// 27 Crea un bloque de código que tome de referencia un número. Utiliza el operador ternario para determinar si es positivo, negativo o cero e imprime el resultado en consola.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+numA > 0 ? console.log(numA + " es positivo") :
+numA == 0 ? console.log(numA) : console.log(numA + " es negativo")
