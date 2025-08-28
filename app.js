@@ -342,3 +342,9 @@ do{
 }while(isNaN(parseInt(numA)))
 numA > 0 ? console.log(numA + " es positivo") :
 numA == 0 ? console.log(numA) : console.log(numA + " es negativo")
+// 28 Crea un bloque de código que tome de referencia un número del 1 al 100 y utilice el operador ternario para determinar si es múltiplo de 3 y 5 para imprimir el resultado en consola.
+do{
+    numA = prompt("Ingrese un numero: ")
+    numA = parseInt(numA)
+}while(isNaN(parseInt(numA)) || numA < 0 || numA > 100)
+numA % 3 == 0 && numA % 5 == 0 ? console.log("Es multiplo de 3 y 5") : console.log("No es multiplo de 3 y 5")
