@@ -289,3 +289,21 @@ switch (stringVar.toLowerCase().trim()) {
   default:
     console.log(stringVar + "Es un carácter especial");
 }
+// 22 Crea un bloque de código que tome de referencia un número del 1 al 4. Utiliza switch para imprimir en consola la estación del año correspondiente.
+do{
+    numA = prompt("Ingrese un numero del 1 al 4: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA > 4)
+switch(numA){
+    case('1'):
+        console.log("otonio")
+    break;
+    case('2'):
+        console.log("invierno")
+    break;
+    case('3'):
+        console.log("primavera")
+    break;
+    case('4'):
+        console.log("verano")
+    break;
+}
