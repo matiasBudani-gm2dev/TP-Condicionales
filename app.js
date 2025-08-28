@@ -320,3 +320,9 @@ do{
     numA = prompt("Ingrese un numero: ")
 }while(isNaN(parseInt(numA)))
 numA % 2 == 0 ? console.log(numA + " es par"): console.log(numA + " es impar")
+// 25 Crea un bloque de código que tome de referencia dos números y utilice el operador ternario para determinar cual de los dos es el mayor. Luego imprime en consola el resultado.
+do{
+    numA = prompt("Ingrese un numero: ")
+    numB = prompt("Ingrese otro numero: ")
+}while(isNaN(parseInt(numA)), isNaN(parseInt(numB)))
+numA > numB ? console.log(numA + " es mayor que " + numB) : numA === numB ? console.log(numA + " y " + numB + " son iguales") : console.log(numA + " es menor que " + numB)
