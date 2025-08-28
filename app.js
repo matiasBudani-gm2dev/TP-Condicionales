@@ -133,3 +133,17 @@ else if(numA<= 50){
 else{
     console.log(numA + " es mayora 50")
 }
+// 14 Crea un bloque de código que compare dos números. Si ambos números son menores a 10, imprimir en consola el múltiplo. Si ambos números son mayores a 50,  imprimir en consola su suma. Sino, imprimir en consola el primer número menos el segundo.
+do{
+    numA = prompt("Ingrese un numero: ")
+    numB = prompt("Ingrese otro numero: ")
+}while(isNaN(parseInt(numA)), isNaN(parseInt(numB)))
+if(numA < 10 && numB < 10){
+    console.log(numA * numB)
+}
+else if(numA > 50 && numB > 50){
+    console.log(numA + numB)
+}
+else{
+    console.log(numA - numB)
+}
