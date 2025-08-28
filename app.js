@@ -157,3 +157,19 @@ for(i = 0; i < diasSemana.length; i++){
         console.log(diasSemana[i])
     }
 }
+// 16 Crea un bloque de código que reciba un número e imprima en pantalla si es divisible por 2, 3, o ninguno.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+if(numA % 2 == 0 && numA % 3 == 0){
+    console.log(numA + " es divisible por 2 y 3")
+}
+else if(numA % 2 == 0){
+    console.log(numA + " es divisible por 2")
+}
+else if(numA % 3 == 0){
+    console.log(numA + " es divisible por 3")
+}
+else{
+    console.log(numA + "no es divisible por 2 ni 3")
+}
