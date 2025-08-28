@@ -93,6 +93,21 @@ for(let i = 0; i<vocales.length; i++){
         i = vocales.length
     }
     if(i == (vocales.length-1) && stringVar != vocales[i]){
-        console.log(stringVar + "es una consonante")
+        console.log(stringVar + " es una consonante")
     }
+}
+// 11 Crea un bloque de código que tome de referencia un nombre. Si el nombre ingresado es ‘Pedro’ imprimir en consola ‘Hola Pedro, como estás?’. De lo contrario, imprimir ‘Hola! Cómo te llamas?’.
+inWhile = true
+let nombreVar;
+do{
+    nombreVar = prompt("Ingrese un nombre: ")
+    if(letras.test(stringVar)){
+        inWhile = false
+    }
+}while(inWhile)
+if(nombreVar.toLocaleLowerCase() == 'pedro'){
+    console.log("Hola Pedro, como estás?")
+}
+else{
+    console.log("Hola! Cómo te llamas?")
 }
