@@ -173,3 +173,14 @@ else if(numA % 3 == 0){
 else{
     console.log(numA + "no es divisible por 2 ni 3")
 }
+// 17 Crea un bloque de código que tome de referencia un número del 1 al 12 y devuelva el mes correspondiente. Por ejemplo: 1 = ‘Enero’.
+const meses = ['enero', 'febrero', 'marzo', 'arbil', 'mayo', 'junio', 'julio', 
+    'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+do{
+    numA = prompt("Ingrese un numero del 1 al 12: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA > 12 )
+for(i = 0; i < meses.length; i++){
+    if(numA == i+1){
+        console.log(meses[i])
+    }
+}
