@@ -315,3 +315,8 @@ do{
     }
 }while(isNaN(edad) || edad === edad.toString())
 edad >=18 ? console.log("Eres mayor de edad") : console.log("No eres mayor de edad")
+// 24 Crea un bloque de código que tome de referencia un número. Utiliza el operador ternario para determinar si es par o impar y muestra el resultado en consola.
+do{
+    numA = prompt("Ingrese un numero: ")
+}while(isNaN(parseInt(numA)))
+numA % 2 == 0 ? console.log(numA + " es par"): console.log(numA + " es impar")
