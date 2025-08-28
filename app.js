@@ -213,7 +213,7 @@ switch(numA){
         break;
 }
 // 19 Crea un bloque de código que tome de referencia una letra correspondiente al género (‘H’, ‘M’, ‘X’…). Utiliza una sentencia switch para imprimir en consola el género correspondiente.
-let gener;
+let genero;
 do{
     genero = prompt("Ingrese su genero (H, M, X): ")
     genero = genero.toLocaleLowerCase()
@@ -228,4 +228,21 @@ switch(genero){
     case('x'):
         console.log("Tu genero es no binario")
         break;
+}
+// 20 Crea un bloque de código que reciba un número del 1 al 10. Utiliza switch para imprimir en consola ‘Uno’, ‘Dos’, ‘Tres’, o ‘Mayor a 3’, según corresponda. 
+do{
+    numA = prompt("Ingrese un numero del 1 al 10: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA > 10)
+switch(numA){
+    case('1'):
+        console.log("Uno")
+    break;
+    case('2'):
+        console.log("Dos")
+    break;
+    case('3'):
+        console.log("Tres")
+    break;
+    default:
+        console.log("Mayor a 3")
 }
