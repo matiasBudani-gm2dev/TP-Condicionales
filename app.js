@@ -184,3 +184,31 @@ for(i = 0; i < meses.length; i++){
         console.log(meses[i])
     }
 }
+// 18 Crea un bloque de código que tome de referencia un número del 1 al 7. Utiliza una sentencia Switch para imprimir en consola el día de la semana correspondiente.
+
+do{
+    numA = prompt("Ingrese un numero del 1 al 7: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA >7 )
+switch(numA){
+    case('1'):
+        console.log(diasSemana[0])
+        break;
+    case('2'):
+        console.log(diasSemana[1])
+        break;
+    case('3'):
+        console.log(diasSemana[2])
+        break;
+    case('4'):
+        console.log(diasSemana[3])
+        break;
+    case('5'):
+        console.log(diasSemana[4])
+        break;
+    case('6'):
+        console.log(diasSemana[5])
+        break;
+    case('7'):
+        console.log(diasSemana[6])
+        break;
+}
