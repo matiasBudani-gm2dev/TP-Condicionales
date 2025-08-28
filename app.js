@@ -212,3 +212,20 @@ switch(numA){
         console.log(diasSemana[6])
         break;
 }
+// 19 Crea un bloque de código que tome de referencia una letra correspondiente al género (‘H’, ‘M’, ‘X’…). Utiliza una sentencia switch para imprimir en consola el género correspondiente.
+let gener;
+do{
+    genero = prompt("Ingrese su genero (H, M, X): ")
+    genero = genero.toLocaleLowerCase()
+}while(!(genero == 'h') && !(genero == 'm') && !(genero == 'x'))
+switch(genero){
+    case('h'):
+        console.log("Tu genero es masculino")
+        break;
+    case('m'):
+        console.log("Tu genero es femenino")
+        break;
+    case('x'):
+        console.log("Tu genero es no binario")
+        break;
+}
