@@ -307,3 +307,11 @@ switch(numA){
         console.log("verano")
     break;
 }
+// 23 Crea un bloque de código que tome de referencia una variable ‘edad’. Utiliza el operador ternario para imprimir en consola si es o no mayor de edad.
+do{
+    edad = prompt("Ingrese su edad: ")
+    if(edad % 1 == 0 && edad >= 0){
+        edad = parseInt(edad)
+    }
+}while(isNaN(edad) || edad === edad.toString())
+edad >=18 ? console.log("Eres mayor de edad") : console.log("No eres mayor de edad")
