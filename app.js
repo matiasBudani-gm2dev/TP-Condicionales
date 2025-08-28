@@ -147,3 +147,13 @@ else if(numA > 50 && numB > 50){
 else{
     console.log(numA - numB)
 }
+// 15 Crea un bloque de código que tome de referencia un número del 1 al 7 y devuelva el día de la semana correspondiente. Por ejemplo: 1 = ‘lunes’
+do{
+    numA = prompt("Ingrese un numero del 1 al 7: ")
+}while(isNaN(parseInt(numA)) || numA < 1 || numA >7 )
+const diasSemana = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+for(i = 0; i < diasSemana.length; i++){
+    if(numA == i+1){
+        console.log(diasSemana[i])
+    }
+}
