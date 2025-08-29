@@ -352,16 +352,12 @@ numA % 3 == 0 && numA % 5 == 0 ? console.log("Es multiplo de 3 y 5") : console.l
 do{
     numA = prompt("Ingrese un numero: ")
     numA = parseInt(numA)
-}while(isNaN(parseInt(numA)))
+}while(isNaN(parseInt(numA)) || numA<0 || numA>100)
 let mensajeMultiplo = numA + " es divisible por:";
-switch(true){
-    case(numA % 5 == 0):
-        mensajeMultiplo += "\n5"
-    case(numA % 3 == 0):
-        mensajeMultiplo += "\n3"
-    case(numA % 2 == 0):
-        mensajeMultiplo += "\n2"
-}
+numA % 5 === 0 ? mensajeMultiplo += "\n": null 
+numA % 5 === 0 ? mensajeMultiplo += "\n": null
+numA % 5 === 0 ? mensajeMultiplo += "\n": null
+
 if(mensajeMultiplo == numA + " es divisible por:"){
     console.log(numA + " no es divisible por 2, 3 ni 5")
 }else{
