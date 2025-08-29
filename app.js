@@ -379,3 +379,5 @@ mensajeMultiplo = mensajeMultiplo.replace(", es divisible por:", "") : null
 numA > 50 ? mensajeMultiplo += "\ny es mayor a 50" : 
 numA === 50 ? mensajeMultiplo += "\ny es igual a 50" : mensajeMultiplo += "\ny es menor a 50"
 console.log(mensajeMultiplo)
+// 31 Desarrolla 10 nuevas situaciones en donde requieras de utilizar condicionales para su resolución.
+// ACLARACION: Se me indico ignorar este ejercicio
