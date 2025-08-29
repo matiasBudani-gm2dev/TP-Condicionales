@@ -348,3 +348,22 @@ do{
     numA = parseInt(numA)
 }while(isNaN(parseInt(numA)) || numA < 0 || numA > 100)
 numA % 3 == 0 && numA % 5 == 0 ? console.log("Es multiplo de 3 y 5") : console.log("No es multiplo de 3 y 5")
+// 29 Crea un bloque de código que tome de referencia un número del 1 al 100 y, utilizando el tipo de condicional que prefieras, imprimir si es múltiplo de 2, 3 o 5 incluyendo las diferentes combinaciones posibles.
+do{
+    numA = prompt("Ingrese un numero: ")
+    numA = parseInt(numA)
+}while(isNaN(parseInt(numA)))
+let mensajeMultiplo = numA + " es divisible por:";
+switch(true){
+    case(numA % 5 == 0):
+        mensajeMultiplo += "\n5"
+    case(numA % 3 == 0):
+        mensajeMultiplo += "\n3"
+    case(numA % 2 == 0):
+        mensajeMultiplo += "\n2"
+}
+if(mensajeMultiplo == numA + " es divisible por:"){
+    console.log(numA + " no es divisible por 2, 3 ni 5")
+}else{
+    console.log(mensajeMultiplo)
+}
